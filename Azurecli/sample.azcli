@@ -1,0 +1,21 @@
+# azure cli
+Az login
+
+## To create resource group
+az group create -l "centralus" -n "network"
+
+## vnet
+
+az network vnet create -g "network" -n MyVnet --address-prefix 10.0.0.0/16 
+
+az network vnet subnet create -n mydb --vnet-name myVnet --address-prefixes 10.0.0.0/24
+az network vnet subnet create -n server --vnet-name myVnet --address-prefixes 10.0.1.0/24
+az network vnet subnet create -n data --vnet-name myVnet --address-prefixes 10.0.2.0/24
+az network vnet subnet create -n web --vnet-name myVnet --address-prefixes 10.0.3.0/24
+
+# NSG 
+az network nsg create -n mynsg -g network -l centralus 
+
+# security_group roles
+az network nsg rule create --name role1 --nsg-name mynsg  --priority 325 --source-address-prefixes Internet --destination-port-ranges 80 8080 --destination-asgs Web --access Allow --protocol Tcp --description "Allow Internet to Web ASG on ports 80,8080
+

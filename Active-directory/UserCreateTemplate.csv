@@ -1,0 +1,3 @@
+﻿version:v1.0,,,,,,,,,,,,,,,,
+Name (example: Chris Green) [displayName] *,User name (example: chris@contoso.com) [userPrincipalName] *,Initial password [passwordProfile] *,Block sign in (Yes/No) [accountEnabled] *,First name [givenName],Last name [surname],Job title [jobTitle],Department [department],Usage location [usageLocation],Street address [streetAddress],State or province [state],Country or region [country],Office [physicalDeliveryOfficeName],City [city],ZIP or postal code [postalCode],Office phone [telephoneNumber],Mobile phone [mobile]
+ramjagadeesh,ram@navaneethmolagmail.onmicrosoft.com,Rjkumar@143143,no,ram,jagadeesh,Admin,devops,hyderabad,kphb7thphase,Andhrapradesh,india,techm,hyderabad,533289,88324555596817,991555552322280
